@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_stream_typewriter_text/flutter_stream_typewriter_text.dart';
+import 'package:flutter_typewriter_text/flutter_typewriter_text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
-  final _flutterStreamTypewriterTextPlugin = FlutterStreamTypewriterText();
+  final _flutterTypewriterTextPlugin = FlutterTypewriterText();
 
   @override
   void initState() {
@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
     // We also handle the message potentially returning null.
     try {
       platformVersion =
-          await _flutterStreamTypewriterTextPlugin.getPlatformVersion() ?? 'Unknown platform version';
+          await _flutterTypewriterTextPlugin.getPlatformVersion() ?? 'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }

@@ -1,6 +1,6 @@
-# flutter_stream_typewriter_text_example
+# flutter_typewriter_text_example
 
-Demonstrates how to use the flutter_stream_typewriter_text plugin.
+Demonstrates how to use the flutter_typewriter_text plugin.
 
 ## Getting Started
 

@@ -1,10 +1,10 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_stream_typewriter_text/flutter_stream_typewriter_text_method_channel.dart';
+import 'package:flutter_typewriter_text/flutter_typewriter_text_method_channel.dart';
 
 void main() {
-  MethodChannelFlutterStreamTypewriterText platform = MethodChannelFlutterStreamTypewriterText();
-  const MethodChannel channel = MethodChannel('flutter_stream_typewriter_text');
+  MethodChannelFlutterTypewriterText platform = MethodChannelFlutterTypewriterText();
+  const MethodChannel channel = MethodChannel('flutter_typewriter_text');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
